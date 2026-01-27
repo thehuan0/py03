@@ -1,18 +1,22 @@
+#!/usr/bin/env python3
 """
-This program demonstrates how to receive command-line arguments
-from the user. It displays the program name, the number of
-arguments received, each argument individually, and the total
-number of arguments including the program name.
+This module demonstrates how to receive and process command-line arguments.
+It displays the program name and arguments in a user-friendly format.
 
 Authorized modules: sys
 """
 import sys
 
 
-def main() -> None:
+def ft_command_quest() -> None:
     """
-    Main function that processes command-line arguments and
-    displays them in a user-friendly format.
+    Display program name and command-line arguments.
+
+    This function prints:
+    - The program name (sys.argv[0])
+    - Number of arguments received
+    - Each argument with its index
+    - Total number of arguments including program name
     """
     print("=== Command Quest ===")
     if len(sys.argv) == 1:
@@ -27,4 +31,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    ft_command_quest()
